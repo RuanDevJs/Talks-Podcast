@@ -1,0 +1,362 @@
+@import "./reset.css";
+@import "./responsive.css";
+@import "./effect.css";
+
+/* body */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1f1f1f;
+}
+
+/* Header */
+
+.header {
+  padding: 20px;
+  background-color: #1f1f1f;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 16%);
+}
+
+.header-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: block;
+}
+
+.header-nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.header-nav > ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  transition: 0.2s ease-out;
+  letter-spacing: 1.9px;
+}
+
+.header-nav > ul li a:hover {
+  color: #f2c335;
+  transition: 0.2s ease-in;
+}
+
+.btn-entrar {
+  background-color: #1f1f1f;
+  outline: 0;
+  border: 2px solid #f2c335;
+  font-weight: 900;
+  font-size: 20px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+
+.btn-entrar:hover {
+  background-color: #f8a71a;
+  transition: ease-in 0.3s;
+  border-color: #f8a71a;
+}
+
+/*********************
+        INTRO
+*********************/
+
+.intro {
+  padding: 50px 0;
+}
+
+.intro-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.intro-container > div {
+  flex: 1;
+  max-width: 600px;
+}
+
+.dots {
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.dots-container {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.intro-container:nth-child(1) .dots-container > .dots:nth-child(1) {
+  background-color: #f2c335;
+}
+
+.intro-container:nth-child(2) .dots-container > .dots:nth-child(2) {
+  background-color: #f2c335;
+}
+
+.intro-container:nth-child(3) .dots-container > .dots:nth-child(3) {
+  background-color: #f2c335;
+}
+
+.title-section {
+  font-size: 60px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.intro-section {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  color: #c2c2c2;
+}
+
+.subtitle-section {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  color: #ccc;
+  margin-top: 5px;
+  line-height: 1.5em;
+}
+
+.btn-ouvir {
+  display: block;
+  margin-top: 20px !important;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  background-color: #f2c335;
+  max-width: 180px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 4px;
+  transition: 0.4s ease-out;
+}
+
+.btn-ouvir:hover {
+  background-color: #f8a71a;
+  transition: 0.4s ease-in;
+}
+
+.intro-container img {
+  max-width: 100%;
+  height: 420px;
+}
+
+/*****************
+        SOBRE
+******************/
+
+.sobre {
+  margin-top: 50px;
+  padding: 50px 0;
+}
+
+.sobre-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sobre-container > div {
+  flex: 1;
+  max-width: 460px;
+}
+
+/*****************
+      PODCAST
+******************/
+
+.podcast {
+  margin-top: 50px;
+  padding: 50px 0;
+}
+
+.podcast-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.podcast-container > div div {
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.podcast-container > div img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.podcast-subtitle {
+  font-size: 16px;
+  text-align: center;
+  color: #c2c2c2;
+  line-height: 1.5em;
+}
+
+.podcast-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.btn-mais {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  margin: 50px auto;
+  padding: 8px 10px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  background-color: #a136ff;
+  border: 0;
+  color: #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.btn-mais:hover {
+  background-color: #a154ff;
+  transition: 0.4s ease-in;
+}
+
+.contato {
+  margin-top: 50px;
+  padding: 50px 0;
+}
+
+.contato-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contato-container > div {
+  max-width: 460px;
+}
+
+.talks-form div {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.talks-form input {
+  width: 260px;
+  padding: 10px;
+  outline: 0;
+  border: 2px solid #222222;
+  background-color: #1f1f1f;
+  font-size: 16px;
+  color: #c2c2c2;
+  font-weight: 400;
+}
+
+.talks-form textarea {
+  max-width: 460px;
+  padding: 10px;
+  outline: 0;
+  border: 2px solid #222222;
+  background-color: #1f1f1f;
+  font-size: 16px;
+  color: #c2c2c2;
+  font-weight: 400;
+}
+
+.contato button {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  margin: 20px 0 !important;
+  padding: 10px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  background-color: #a136ff;
+  border: 0;
+  color: #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.contato-nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contato-nav li a {
+  display: block;
+  padding: 20px 30px 20px 0;
+  transition: 0.2s ease-out;
+}
+
+.contato-nav li a:hover {
+  color: #a136ff;
+  transition: 0.2s ease-in;
+}
+
+.input-item {
+  max-width: 300px;
+  margin-left: 5px;
+}
+
+.forms-input {
+  display: flex;
+  flex-direction: row !important;
+}

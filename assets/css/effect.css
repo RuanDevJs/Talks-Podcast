@@ -1,0 +1,40 @@
+@import "./animations.css";
+
+[data-slide] {
+  display: none !important;
+}
+
+[data-slide].activeSlide {
+  display: flex !important;
+  animation: goRight 0.3s forwards;
+}
+
+[data-podcasts] {
+  display: none !important;
+}
+
+[data-podcasts].activePodcasts {
+  display: flex !important;
+  animation: goDown 0.5s forwards;
+}
+
+[data-warning] {
+  display: none !important;
+  text-align: center;
+}
+
+[data-warning].activeAdvice {
+  display: flex !important;
+  transition: 0.2s ease-in;
+  animation: goRight 0.3s forwards;
+  justify-content: center;
+}
+
+[data-scroll] {
+  opacity: 0;
+}
+
+[data-scroll].activeScroll {
+  opacity: 1;
+  animation: goRight 0.3s forwards;
+}
